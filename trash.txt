@@ -1,0 +1,33 @@
+db.posts.find().pretty()
+
+
+{
+	"title" : "This is first post",
+	"description": "this is my first post ...blah blah."
+}
+
+
+Post.find()
+	.then(data => {
+		res.json(data);
+	})
+	.catch(err => {
+		res.json({ message: err })
+	})
+
+
+https://www.youtube.com/watch?v=vjf774RKrLc
+37 min 
+
+npm install dotenv
+const dotenv = require('dotenv');
+then initialize it dotenv.config()
+then we can use it like: process.env.VARIABLE_NAME
+
+npm install @hapi/joi
+This package is for validate req.body params
+
+npm install bcryptjs
+this is for gen salt and hash password, compare password
+
+npm install jsonwebtoken
